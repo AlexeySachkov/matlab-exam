@@ -1,5 +1,7 @@
 # Useful links
 
+[Основы программирования в MATLAB](http://sernam.ru/lect_matlab.php)
+
 [Official MATLAB docs](http://www.mathworks.com/help/matlab/)
 
 * [Language Fundamentals](http://www.mathworks.com/help/matlab/language-fundamentals.html)
