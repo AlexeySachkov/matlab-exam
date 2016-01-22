@@ -13,6 +13,9 @@
 
 Для текстовых документов используйте markdown или ascii doc
 
+[Github Markdown Basics](https://help.github.com/articles/markdown-basics/)
+[Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+
 ## Список вопросов:
 
 1.
