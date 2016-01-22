@@ -1,22 +1,25 @@
 Поставим задачу приблизить данные, которые заданы массивами x и y:
-
-```
+```matlab
 x = [0.1 0.3 0.45 0.5 0.79 1.1 1.89 2.4 2.45];
 y = [-3 -1 0.9 2.4 2.5 1.9 0.1 -1.3 -2.6];
 ```
 Для построения полиномов в matlab используется функция polyfit (x,y,n); n - степень полинома.
+```matlab
+p1 = polyfit(x, y, 1)
+p3 = polyfit(x, y, 3)
+p5 = polyfit(x, y, 5)
 
->> p1 = polyfit(x, y, 1)
->> p3 = polyfit(x, y, 3)
->> p5 = polyfit(x, y, 5)
-
->> xx = linspace(x(1), x(end), 100);
-
+xx = linspace(x(1), x(end), 100);
+```
 linspace - функция создания равномерно расположенных точек на интервале от ( x(1) до x(end) ). Вектор хх понадобится, для построения полиномов.
 
 Значение полиномов вычислим с помощью функции polyval (p,interval)
->> yy1 = polyval(p1, xx);
->> yy3 = polyval(p3, xx);
->> yy5 = polyval(p5, xx);
-
-Для построения используем plot() : >> plot(x, y, 'o', xx, yy1, xx, yy3, xx, yy5);
+```matlab
+yy1 = polyval(p1, xx);
+yy3 = polyval(p3, xx);
+yy5 = polyval(p5, xx);
+```
+Для построения используем plot() : 
+```matlab
+plot(x, y, 'o', xx, yy1, xx, yy3, xx, yy5);
+```
