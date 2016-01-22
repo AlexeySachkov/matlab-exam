@@ -43,12 +43,13 @@ fminbnd(@myfun, −2, 2)
     * x = fminbnd(f, a, b)
     * x = fminbnd(f, a, b, options)
     * x = fminbnd(f, a, b, options, P1, P2, ..., Pn)
-    * [x, fval] = fminbnd(...)  - кроме найденной точки минимума x, возвращает также само значение f(x) в найденной точке x. 
-    * [x, fval, exitﬂag] = fminbnd(...) - возвращает флаг окончания exitﬂag.
-    * [x, fval, exitﬂag, output] = fminbnd(...) - возвращает структуру output, в которой
+    * [x, fval] = fminbnd(...)  - возвращает также само значение f(x) в найденной точке x. 
+    * [x, fval, exitﬂag] = fminbnd(...) - возвращает также флаг окончания exitﬂag.
+    * [x, fval, exitﬂag, output] = fminbnd(...) - возвращает структуру output, в которой:
+         * output.algorithm — символьная строка, содержащая название используемого алгоритма,
+         * output.funcCount — количество вычислений значений целевой функции,
+         * output.iterations — общее число итераций.
     
-    output.algorithm — символьная строка, содержащая название используемого алгоритма, output.funcCount — количество вычислений значений целевой функции, output.iterations — общее число итераций. 
-
 options — это структура с дополнительными параметрами (опциями).
 
 Возможные опции: 
