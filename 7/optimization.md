@@ -131,6 +131,17 @@ output =
 
 ### `fminunc`
 
+```matlab
+x = fminunc(fun,x0)
+x = fminunc(fun,x0,options)
+x = fminunc(problem)
+[x,fval] = fminunc(...)
+[x,fval,exitflag] = fminunc(...)
+[x,fval,exitflag,output] = fminunc(...)
+[x,fval,exitflag,output,grad] = fminunc(...)
+[x,fval,exitflag,output,grad,hessian] = fminunc(...)
+```
+
 ## Одномерная условная оптимизация в MATLAB
 
 Функция `f(x)` одного аргумента `x` называется унимодальной на отрезке `[a, b]`, если на нём найдется такая точка `x0` (точка минимума), что `f(x)` монотонно убывает при `a ≤ x ≤ x0` и монотонно возрастает при `x0 ≤ x ≤ b`. Для минимизации унимодальной функции, заданной на отрезке Matlab предоставляет функцию `fminbnd`. 
